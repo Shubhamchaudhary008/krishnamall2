@@ -1,0 +1,732 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=K2D:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@300&family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Hamlin";
+  src: url("../fonts/Hamlin-Regular.eot");
+}
+@font-face {
+  font-family: "Hamlin";
+  src: url("../fonts/Hamlin-Bold.eot");
+  src: url("../fonts/Hamlin-Bold.ttf");
+  src: url("../fonts/Hamlin-Bold.woff");
+  src: url("../fonts/Hamlin-Bold.woff2");
+  src: url("../fonts/Hamlin-ExtraBold.eot");
+  src: url("../fonts/Hamlin-ExtraBold.ttf");
+  src: url("../fonts/Hamlin-ExtraBold.woff");
+  src: url("../fonts/Hamlin-ExtraBold.woff2");
+  src: url("../fonts/Hamlin-Light.eot");
+  src: url("../fonts/Hamlin-Regular.ttf");
+  src: url("../fonts/Hamlin-Regular.woff");
+  src: url("../fonts/Hamlin-Regular.woff2");
+}
+@font-face {
+  font-family: "superpix";
+  src: url("../fonts/Superpix-DONATIONWARE.otf");
+}
+@font-face {
+  font-family: "Queensides";
+  src: url("../fonts/Queensides-3z7Ey.ttf");
+  src: url("../fonts/QueensidesLight-ZVj3l.ttf");
+  src: url("../fonts/QueensidesMedium-x30zV.ttf");
+}
+@font-face {
+  font-family: "engravers roman";
+  src: url("../fonts/Engravers' Roman Bold.otf");
+}
+@font-face {
+  font-family: "play fair";
+  src: url("../fonts/PlayfairDisplay-Black.ttf");
+  src: url("../fonts/PlayfairDisplay-BlackItalic.ttf");
+  src: url("../fonts/PlayfairDisplay-Bold.ttf");
+  src: url("../fonts/PlayfairDisplay-BoldItalic.ttf");
+  src: url("../fonts/PlayfairDisplay-ExtraBold.ttf");
+  src: url("../fonts/PlayfairDisplay-ExtraBoldItalic.ttf");
+  src: url("../fonts/PlayfairDisplay-Italic.ttf");
+  src: url("../fonts/PlayfairDisplay-Medium.ttf");
+  src: url("../fonts/PlayfairDisplay-MediumItalic.ttf");
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "punkbabe";
+  src: url("../fonts/PUNKBABE TRIAL.ttf");
+}
+@font-face {
+  font-family: "thunderspeed";
+  src: url("../fonts/Thunderspeed.otf");
+  src: url("../fonts/Thunderspeed.ttf");
+}
+@font-face {
+  font-family: "dirtyboy";
+  src: url("../fonts/Dirtyboy-BxYl.ttf");
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  display: inline-block;
+}
+body .container-fluid {
+  max-width: 95%;
+}
+body .header_top {
+  background: linear-gradient(90deg, #101010 69.41%, rgba(0, 0, 0, 0.12) 99.45%);
+  padding: 23px 0;
+}
+body .header_top .hamB .btnToggle {
+  background: transparent;
+  color: #fff;
+}
+body .header_top .hamB a {
+  color: #fff;
+}
+body .header_top .hamB a i {
+  color: #fff;
+  font-size: 20px;
+}
+body .header_top .name_header {
+  text-align: center;
+}
+body .header_top .name_header h1 {
+  color: #E9E6DD;
+  font-size: 23px;
+  letter-spacing: 6px;
+  font-weight: 400;
+  font-family: "Tilt Neon";
+}
+body .header_top .search_right {
+  text-align: right;
+}
+body .header_top .search_right img {
+  height: 30px;
+}
+body .banner_top {
+  background: url("../images/landing_img.png");
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  margin: 0 57px;
+}
+body .banner_top .container-fluid {
+  max-width: initial;
+}
+body .banner_top .banner_texts {
+  padding: 200px 170px;
+}
+body .banner_top .banner_texts h3 {
+  color: #E9E6DD;
+  font-size: 70px;
+  font-weight: 300;
+  font-family: "Playfair Display";
+  margin: 0 0 15px;
+}
+body .banner_top .banner_texts h4 {
+  color: #E9E6DD;
+  font-family: "Playfair Display";
+  font-size: 20px;
+}
+body .options_section .dropdown_part .dropdown {
+  background: transparent;
+  position: relative;
+}
+body .options_section .dropdown_part .dropdown .btn {
+  background: transparent;
+  border: 0;
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Hamlin";
+  margin: 0 10px 0 0;
+}
+body .options_section .dropdown_part .dropdown .btn::after {
+  display: none;
+}
+body .options_section .dropdown_part .dropdown i {
+  margin: 5px 0 0;
+}
+body .options_section .dropdown_part .dropdown ul li a {
+  color: #000000;
+  font-size: 20px;
+}
+body .options_section .sorting_part {
+  text-align: right;
+}
+body .options_section .sorting_part a {
+  font-family: "Hamlin";
+  color: #000000;
+  font-size: 20px;
+}
+body .options_section .sorting_part a img {
+  height: 25px;
+}
+body .product_section {
+  background: url("../images/product_bgnew.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 57px;
+  padding: 175px 0 55px;
+}
+body .product_section .productBox {
+  margin: 0 0 95px;
+}
+body .product_section .productBox .imgPart img {
+  height: 360px;
+}
+body .product_section .productBox .textsPart h1 {
+  font-size: 36px;
+  font-weight: 200;
+  color: #fff;
+  font-family: "engravers roman";
+  border-bottom: 1px solid #fff;
+  max-width: 140px;
+  margin: 10px auto 15px;
+  letter-spacing: 7px;
+}
+body .product_section .productBox .textsPart h2 {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "engravers roman";
+}
+body .product_section .productBox .textsPart h3 {
+  color: #fff;
+  font-family: "engravers roman";
+  margin: 5px 0 0;
+}
+body .product_section .productBox .textsPart h4 {
+  color: #fff;
+  font-family: "engravers roman";
+  opacity: 0.7;
+}
+body .product_section .productBox .textsPart h5 {
+  color: #fff;
+  font-family: "play fair";
+  margin: 15px 0 0;
+}
+body .product_section .productBox .textsPart.textsPartSec h1 {
+  font-family: "Queensides";
+  max-width: 70px;
+  letter-spacing: 7px;
+  padding: 0 0 8px;
+}
+body .product_section .more_btn {
+  margin: 95px 0 0;
+}
+body .product_section .more_btn a {
+  color: #fff;
+  font-size: 17px;
+  font-family: "Hamlin";
+  font-weight: 100;
+}
+body .product_section .more_btn .down {
+  margin: 20px 0 0;
+}
+body .product_section .more_btn .down .vert-move {
+  height: 22px;
+}
+body .product_section .more_btn .down img.vert-move {
+  animation: mover 0.7s infinite alternate;
+}
+body .product_section .more_btn .down img.vert-move {
+  animation: mover 0.7s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+body .bottomStrip {
+  background: #E9E6DD;
+}
+body .bottomStrip .playbtn {
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  flex-direction: column;
+}
+body .bottomStrip .playbtn a img {
+  height: 38px;
+}
+body .bottomStrip .playbtn .playtext {
+  font-family: "superpix";
+  color: #000000;
+  font-size: 19px;
+  font-weight: 300;
+  margin: 8px 0 0;
+}
+body .header_aviator {
+  background: #141416;
+  padding: 15px 0;
+}
+body .header_aviator .backOption a i {
+  color: #ffffff;
+  font-size: 30px;
+}
+body .header_aviator .game_logo {
+  text-align: center;
+}
+body .header_aviator .game_logo img {
+  height: 65px;
+}
+body .header_aviator .wallet {
+  text-align: right;
+}
+body .header_aviator .wallet a img {
+  height: 30px;
+}
+body .game_full {
+  background: url("../images/aviator_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0 70px;
+}
+body .game_full .left_part {
+  padding: 65px 0;
+}
+body .game_full .left_part .amtPart {
+  margin: 0 0 60px;
+}
+body .game_full .left_part .amtPart .first_amtPart {
+  max-width: 500px;
+}
+body .game_full .left_part .amtPart .first_amtPart .rs_icon {
+  background: #090B17;
+  padding: 15px 12px 6px 6px;
+}
+body .game_full .left_part .amtPart .first_amtPart .rs_icon img {
+  height: 18px;
+}
+body .game_full .left_part .amtPart .first_amtPart input {
+  background: #ffffff;
+  max-width: 137px;
+  font-family: "thunderspeed";
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  padding: 5px 0px 5px 18px;
+  border-radius: 0;
+}
+body .game_full .left_part .amtPart .first_amtPart input::-moz-placeholder {
+  color: #000000;
+}
+body .game_full .left_part .amtPart .first_amtPart input::placeholder {
+  color: #000000;
+}
+body .game_full .left_part .amtPart .first_amtPart .plus_minus {
+  background: #090B17;
+  padding: 3px 10px 10px 7px;
+}
+body .game_full .left_part .amtPart .first_amtPart .plus_minus a {
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  margin-left: 7px;
+}
+body .game_full .left_part .amtPart .first_amtPart .plus_minus a::after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 28px;
+  width: 2px;
+  top: 10px;
+  left: 25px;
+}
+body .game_full .left_part .amtPart .first_amtPart .plus_minus a:last-child {
+  margin: 0 0 0 13px;
+}
+body .game_full .left_part .amtPart .first_amtPart .plus_minus a:last-child:after {
+  display: none;
+}
+body .game_full .left_part .amtPart .place_btns a {
+  font-family: "dirtyboy";
+  font-size: 25px;
+  font-weight: 400;
+  color: #000000;
+  background: #428929;
+  padding: 15px 12px 10px;
+  line-height: 20px;
+}
+body .game_full .left_part .amtPart .place_btns a:last-child {
+  background: #760000;
+  margin: 0 0 0 4px;
+}
+body .game_full .left_part .x_part {
+  background: #fff;
+  max-width: 170px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 13px 0;
+  margin: 130px 0 0px;
+}
+body .game_full .left_part .x_part h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+body .game_full .left_part .x_part h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+body .game_full .center_part .gameBox {
+  height: 550px;
+  position: relative;
+}
+body .game_full .center_part .gameBox .aviatorgame_bg {
+  height: 100%;
+  width: 100%;
+}
+body .game_full .center_part .gameBox .aviator_plane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+}
+body .bottom_panel {
+  background: #1A1A1A;
+  padding: 25px 0;
+}
+body .bottom_panel .panel_btn a img {
+  height: 40px;
+}
+body .sign_upFull {
+  background: url("../images/signupbg.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+body .sign_upFull .form_part {
+  max-width: 400px;
+  margin: 300px 0 0 auto;
+}
+body .sign_upFull .form_part .heading_form {
+  font-size: 45px;
+  letter-spacing: 10px;
+  margin: 0 0 45px;
+  background: linear-gradient(90deg, #FFF 6.72%, #7D564F 72.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+body .sign_upFull .form_part form .iconBox {
+  border: 3px solid rgba(233, 230, 221, 0.6);
+  padding: 7px 10px 7px 10px;
+  margin: 0 15px 0 0px;
+}
+body .sign_upFull .form_part form .iconBox i {
+  color: #b8b8b8;
+  font-size: 17px;
+}
+body .sign_upFull .form_part form .iconBox img {
+  height: 22px;
+}
+body .sign_upFull .form_part form input {
+  background: transparent;
+  border: 3px solid rgba(233, 230, 221, 0.6);
+  border-radius: 0;
+}
+body .sign_upFull .form_part form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.46);
+}
+body .sign_upFull .form_part form input::placeholder {
+  color: rgba(255, 255, 255, 0.46);
+}
+body .otp_full {
+  background: url("../images/signupbg.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 200px 0 0;
+}
+body .otp_full .submit_part {
+  max-width: 600px;
+  margin: 0 0 0 auto;
+}
+body .otp_full .submit_part form input {
+  background: transparent;
+  border: 3px solid rgba(233, 230, 221, 0.6);
+  border-radius: 0;
+}
+body .otp_full .submit_part form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.46);
+}
+body .otp_full .submit_part form input::placeholder {
+  color: rgba(255, 255, 255, 0.46);
+}
+body .otp_full .submit_part form .otp_submitbtn {
+  background: transparent;
+  padding: 15px 40px;
+  border-radius: 18px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Hamlin";
+}
+body .otp_full .submit_part form .otp_submitbtn:hover {
+  background: #fff;
+  color: #000000;
+}
+body .triangle_header {
+  background: #760000;
+  padding: 20px 0 20px;
+}
+body .triangle_header .header_left {
+  align-items: center;
+}
+body .triangle_header .header_left a img {
+  height: 70px;
+}
+body .triangle_header .header_left a img.bar_modern {
+  height: 40px;
+  margin: 0 40px 0 0;
+}
+body .triangle_header .header_right {
+  text-align: right;
+}
+body .triangle_header .header_right a img {
+  height: 30px;
+}
+body .triangle_main {
+  background: url("../images/dicebg-new.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+body .triangle_main .triangle_part {
+  position: relative;
+}
+body .triangle_main .triangle_part .triangle_img {
+  height: 670px;
+  position: absolute;
+  top: 168px;
+  left: 21%;
+}
+body .triangle_main .triangle_part .planeBox {
+  position: absolute;
+  top: 67px;
+  left: 42.7%;
+  border-radius: 50%;
+}
+body .triangle_main .triangle_part .planeBox a .planeIcon {
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+body .triangle_main .triangle_part .planeBox a .planeIcon:hover {
+  transform: rotate(0.99turn);
+}
+body .triangle_main .triangle_part .cardBox {
+  position: absolute;
+  top: 780px;
+  left: 15.5%;
+}
+body .triangle_main .triangle_part .cardBox a .cardIcon {
+  height: 100px;
+  transition: all 0.4s ease-in-out;
+}
+body .triangle_main .triangle_part .cardBox a .cardIcon:hover {
+  transform: rotate(360deg);
+}
+body .triangle_main .triangle_part .colorBox {
+  position: absolute;
+  top: 780px;
+  right: 24%;
+}
+body .triangle_main .triangle_part .colorBox a .colorImg {
+  height: 100px;
+  transition: all 0.4s ease-in-out;
+}
+body .card_header {
+  background: #141416;
+  padding: 10px 0;
+}
+body .card_header .header_left a img {
+  height: 20px;
+}
+body .card_header .header_middle img {
+  height: 50px;
+}
+body .card_header .header_right {
+  text-align: right;
+}
+body .card_header .header_right a img {
+  height: 30px;
+}
+body .game_section {
+  padding: 100px 0 30px;
+  background: url("../images/cardSection_bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+body .game_section .cardGame_box {
+  background: url("../images/gamebg_cards.jpg");
+  background-position: center;
+  background-size: cover;
+  max-width: 60%;
+  margin: auto;
+}
+body .game_section .cardGame_box .box_topPart {
+  justify-content: space-around;
+  padding: 30px 0;
+  border-bottom: 2px solid #fff;
+  position: relative;
+}
+body .game_section .cardGame_box .box_topPart::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 2px;
+  height: 160px;
+  top: 0;
+  left: 50%;
+}
+body .game_section .cardGame_box .box_topPart .redColor img, body .game_section .cardGame_box .box_topPart .blackColor img {
+  height: 100px;
+}
+body .game_section .cardGame_box .box_mainPart {
+  justify-content: space-around;
+  padding: 35px 30px 10px;
+}
+body .game_section .cardGame_box .box_mainPart .vs_img {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  height: 55px;
+}
+body .game_section .cardGame_box .box_mainPart .leftCards, body .game_section .cardGame_box .box_mainPart .rightCards {
+  justify-content: center;
+}
+body .game_section .cardGame_box .box_mainPart .leftCards .card, body .game_section .cardGame_box .box_mainPart .rightCards .card {
+  margin: 0 0 30px;
+  max-width: 100px;
+}
+body .game_section .cardGame_box .box_mainPart .leftCards .card img, body .game_section .cardGame_box .box_mainPart .rightCards .card img {
+  height: 100%;
+  width: 100%;
+}
+body .game_section .bet_part {
+  display: flex;
+}
+body .game_section .bet_part .amtPart {
+  margin: 50px 0 0px;
+}
+body .game_section .bet_part .amtPart:last-child {
+  margin: 50px 0 0 50px;
+}
+body .game_section .bet_part .amtPart .first_amtPart {
+  max-width: 500px;
+}
+body .game_section .bet_part .amtPart .first_amtPart .rs_icon {
+  background: #090B17;
+  padding: 15px 12px 6px 6px;
+}
+body .game_section .bet_part .amtPart .first_amtPart .rs_icon img {
+  height: 18px;
+}
+body .game_section .bet_part .amtPart .first_amtPart input {
+  background: #ffffff;
+  max-width: 137px;
+  font-family: "thunderspeed";
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  padding: 5px 0px 5px 18px;
+  border-radius: 0;
+}
+body .game_section .bet_part .amtPart .first_amtPart input::-moz-placeholder {
+  color: #000000;
+}
+body .game_section .bet_part .amtPart .first_amtPart input::placeholder {
+  color: #000000;
+}
+body .game_section .bet_part .amtPart .first_amtPart .plus_minus {
+  background: #090B17;
+  padding: 3px 10px 10px 7px;
+}
+body .game_section .bet_part .amtPart .first_amtPart .plus_minus a {
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  margin-left: 7px;
+}
+body .game_section .bet_part .amtPart .first_amtPart .plus_minus a::after {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 28px;
+  width: 2px;
+  top: 10px;
+  left: 25px;
+}
+body .game_section .bet_part .amtPart .first_amtPart .plus_minus a:last-child {
+  margin: 0 0 0 13px;
+}
+body .game_section .bet_part .amtPart .first_amtPart .plus_minus a:last-child:after {
+  display: none;
+}
+body .game_section .bet_part .amtPart .place_btns a {
+  font-family: "dirtyboy";
+  font-size: 25px;
+  font-weight: 400;
+  color: #000000;
+  background: #428929;
+  padding: 15px 12px 10px;
+  line-height: 20px;
+}
+body .game_section .bet_part .amtPart .place_btns a:last-child {
+  background: #760000;
+  margin: 0 0 0 4px;
+}
+body .game_section .history_btn {
+  text-align: right;
+}
+body .game_section .history_btn a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  background: #760000;
+  padding: 8px 30px;
+  border-radius: 20px;
+  font-family: "Queensides";
+}
+body .color_header {
+  padding: 30px 0 30px;
+  border-bottom: 5px solid #957cfd;
+}
+body .color_header .back_btn a img {
+  height: 60px;
+}
+body .color_header .color_logo {
+  text-align: center;
+}
+body .color_header .color_logo img {
+  height: 40px;
+}
+body .color_header .wallet_icon {
+  text-align: end;
+}
+body .color_header .wallet_icon a img {
+  height: 35px;
+}
+body .color_gamePart {
+  padding: 40px 0 50px;
+}
